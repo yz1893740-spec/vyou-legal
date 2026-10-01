@@ -22,12 +22,27 @@ ul { padding-left: 1.25rem; }
 hr { border: 0; border-top: 1px solid var(--muted); opacity: .35; margin: 2.5rem 0; }
 a { color: inherit; }
 nav { margin-bottom: 2.5rem; font-size: .9rem; color: var(--muted); }
+.languages { display: flex; gap: 1rem; white-space: nowrap; overflow-x: auto; }
+.languages [aria-current] { font-weight: bold; }
 </style>
 </head>
 <body>
+<nav class="languages" aria-label="Language"><span lang="zh-Hant" aria-current="page">繁體中文</span>
+<a href="#en" lang="en" hreflang="en">English</a>
+<a href="#ja" lang="ja" hreflang="ja">日本語</a>
+<a href="#ko" lang="ko" hreflang="ko">한국어</a>
+<a href="#es" lang="es" hreflang="es">Español</a>
+<a href="#de" lang="de" hreflang="de">Deutsch</a>
+<a href="#fr" lang="fr" hreflang="fr">Français</a></nav>
 <nav><a href="./">Vyou</a></nav>
 <h1>Vyou</h1>
 <p>法律文件。</p>
-<ul><li><a href="privacy.html">隱私政策</a></li><li><a href="terms.html">購買條款</a></li></ul>
+<section id="zh_TW" lang="zh-Hant"><h2>繁體中文</h2><ul><li><a href="privacy.html">Vyou 隱私政策</a></li><li><a href="terms.html">Vyou 購買條款</a></li></ul></section>
+<section id="en" lang="en"><h2>English</h2><ul><li><a href="privacy_en.html">Vyou Privacy Policy</a></li><li><a href="terms_en.html">Vyou Purchase Terms</a></li></ul></section>
+<section id="ja" lang="ja"><h2>日本語</h2><ul><li><a href="privacy_ja.html">Vyou プライバシーポリシー</a></li><li><a href="terms_ja.html">Vyou 購入規約</a></li></ul></section>
+<section id="ko" lang="ko"><h2>한국어</h2><ul><li><a href="privacy_ko.html">Vyou 개인정보 처리방침</a></li><li><a href="terms_ko.html">Vyou 구매 약관</a></li></ul></section>
+<section id="es" lang="es"><h2>Español</h2><ul><li><a href="privacy_es.html">Política de privacidad de Vyou</a></li><li><a href="terms_es.html">Condiciones de compra de Vyou</a></li></ul></section>
+<section id="de" lang="de"><h2>Deutsch</h2><ul><li><a href="privacy_de.html">Datenschutzerklärung von Vyou</a></li><li><a href="terms_de.html">Kaufbedingungen von Vyou</a></li></ul></section>
+<section id="fr" lang="fr"><h2>Français</h2><ul><li><a href="privacy_fr.html">Politique de confidentialité de Vyou</a></li><li><a href="terms_fr.html">Conditions d&#x27;achat de Vyou</a></li></ul></section>
 </body>
 </html>
