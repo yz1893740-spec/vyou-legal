@@ -66,10 +66,11 @@ nav { margin-bottom: 2.5rem; font-size: .9rem; color: var(--muted); }
 <p>&quot;Clear cache&quot; in the settings page <strong>only clears the App&#x27;s own temporary files — it never touches files already saved to the Photos app</strong>.</p>
 <h2>Purchases</h2>
 <p>Vyou&#x27;s paid plans are <strong>day passes</strong> (7 days, 15 days, or 6 months), <strong>a one-time purchase that never auto-renews</strong>. Whether to buy again after one expires is entirely up to you. Payment is handled entirely by the App Store; <strong>Vyou never sees or keeps your payment details</strong>.</p>
-<p>A pass starts counting down only from its <strong>first activation</strong> — buying one and leaving it unused never expires it. The activation time is stored only in the App’s local data on this phone. It is currently not synced through iCloud; <strong>the developer has no server and cannot see it</strong>.</p>
-<p>After switching phones or reinstalling, &quot;Restore Purchases&quot; with the same Apple ID queries your App Store purchase records. Activation times stay on the original installation, so the original remaining pass time may not carry over for now.</p>
+<p>A pass <strong>starts immediately after purchase</strong>, using the App Store purchase time plus its days × 24 hours, without rounding to midnight. Additional passes queue after existing coverage. The purchase and pass pages show local start and end times. Refunded passes are excluded.</p>
+<p><strong>Restore Purchases with the same Apple ID</strong> rereads App Store transactions, without a Vyou account. Pass windows are rebuilt only from transactions; switching phones or reinstalling never extends or resets them.</p>
+<p>The first free Pro session claim is kept in the iOS Keychain after deleting the App, so reinstalling does not grant another session. This record is not sent to the developer or synced through iCloud.</p>
 <h2>Your rights</h2>
-<p>Because Vyou does not collect or keep your personal data, there is no data for you to ask us to access, correct, or delete. You control what is on your own phone: deleting the App removes every local record and temporary photo.</p>
+<p>Because Vyou does not collect or keep your personal data, there is no data for you to ask us to access, correct, or delete. You control what is on your own phone: deleting the App removes every local record and temporary photo. Deleting the App removes session records and temporary photos; the consumed free Pro claim remains in the iOS Keychain.</p>
 <h2>Children</h2>
 <p>Vyou is not designed for children and does not collect any age information.</p>
 <h2>When this notice changes</h2>
